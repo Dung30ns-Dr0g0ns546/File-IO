@@ -23,3 +23,4 @@ int main(){
 		converter.clear();
 		converter.str("");
 		converter << sNumb1 << "  " << sNumb2;
+	}
