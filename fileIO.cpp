@@ -1,3 +1,8 @@
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
+
 int main(){
 	std::ifstream inFile;
 	std::stringstream converter;
@@ -9,18 +14,27 @@ int main(){
 
 	int numb1;
 	int numb2;
-	int text;
 
 	inFile.open("data.csv");
-	while(getLine(inFile, currentLine)){
+	while(getline(inFile, currentLine)){
+
 		converter.clear();
 		converter.str(currentLine);
 
-		getLine(converter, sNumb1, ",");
-		getLine(converter, sNumb2, ",");
-		getLine(converter, text);
+		getline(converter, sNumb1, ',');
+		getline(converter, sNumb2, ',');
+		getline(converter, text);
 
 		converter.clear();
 		converter.str("");
 		converter << sNumb1 << "  " << sNumb2;
+
+		converter >> numb1 >> numb2;
+
+		int sum = numb1 + numb2;
+		
+		std::cout << sum;
+
 	}
+
+	return 0;
