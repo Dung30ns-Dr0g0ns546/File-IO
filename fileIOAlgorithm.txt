@@ -2,7 +2,13 @@
 
 main()
 
-Read and open file "data.csv"
+Read file "data.csv"
+Declare "inFile" as ifstream
 Declare "converter" as stringstream
-Declare "
+Declare "currentLine" as string
+Declare "sNumb1," "sNumb2," and "text" as string
+
+Use inFile to open file "data.csv"
+While getLine is having ifFile stores the data in currentLine, have getLine format the next line it reads as "sNumb1, sNumb2, "text""
+
 
