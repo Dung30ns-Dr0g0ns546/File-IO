@@ -35,6 +35,11 @@ int main(){
 		
 		std::cout << sum;
 
+		for (int i = 0; i < sum; ++i) {
+			std::cout << "sum" << std::endl;
+
 	}
 
 	return 0;
+	}
+}

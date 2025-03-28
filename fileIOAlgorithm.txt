@@ -1,0 +1,8 @@
+# Algorithm for File IO
+
+main()
+
+Read and open file "data.csv"
+Declare "converter" as stringstream
+Declare "
+
